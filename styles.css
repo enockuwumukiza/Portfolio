@@ -216,10 +216,10 @@ footer{
     padding: 10px 15px;
   }
   #navbar{
-  grid-template-columns: repeat(3, 100px);
-  justify-content: center;
-  align-items: center;
-  padding-top: 5px;
+  grid-template-columns: repeat(3, auto);
+  gap:3px;
+  justify-content: end;
+  
   
   
 }
