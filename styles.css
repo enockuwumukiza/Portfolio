@@ -173,7 +173,7 @@ footer{
 
 
 /* Media queries for responsive design */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   /* Adjustments for smaller screens */
   header {
     padding-top: 5px;
@@ -211,11 +211,10 @@ footer{
     font-size: 1rem;
   }
   #navbar{
-    grid-template-columns: repeat(3, auto);
-    padding-left:2px;
-    padding-right:2px;
-    justify-content: center;
+    display:flex;
+    justify-content:space-between;
     align-items:center;
+    gap:3px;
 }
   .see-all-btn {
     font-size: 1rem;
