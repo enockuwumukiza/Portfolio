@@ -1,0 +1,204 @@
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  background-color: hsl(0, 0%, 90%);
+}
+
+/* Header styles */
+header {
+  display: flex;
+  justify-content: space-around !important;
+  padding-bottom: 5%;
+}
+
+header img {
+  display: grid;
+  position: fixed;
+  left: 2%;
+  width: 100px;
+  height: 80px;
+  object-fit: cover;
+  top: 2%;
+}
+
+header #nav-bar {
+  position: fixed;
+  right: 5%;
+  top: 5%;
+}
+
+header nav a {
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: black;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+/* Form styles */
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 60px;
+  top: 100px;
+}
+header label{
+  display: grid;
+  position: fixed;
+  left: 10%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  top:4%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  width: 200px;
+  color: rgb(53, 172, 211);
+}
+
+#form input {
+  margin: 8px;
+  padding: 5px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+#form input[type="button"] {
+  background-color: orange;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 5px;
+  font-weight: 800;
+}
+
+/* Product features section */
+#Product_Features {
+  display: flex;
+  flex-direction: row;
+  margin-left: 13%;
+  gap: 80px;
+}
+
+#Product_Features div h3 {
+  margin-bottom: 0;
+}
+
+/* How it works section */
+#how_it_works {
+  margin: 25px 30%;
+}
+
+/* Prices section */
+#Prices {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 80%;
+  justify-content: space-evenly;
+  margin: 50px;
+  gap: 40px;
+  align-items: center;
+  margin-left: 15%;
+}
+
+#Prices div {
+  border: 2px solid green;
+  padding: 20px;
+}
+
+#Prices h3,
+#Prices h4,
+#Prices button {
+  margin-left: 30%;
+}
+
+#Prices h4 {
+  background: gray 150%;
+}
+
+#Prices p:first-child {
+  background: gray;
+  text-align: center;
+  margin-top: -18px;
+  padding-bottom: 7px;
+}
+
+#Prices button {
+  background-color: yellow;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 1.3rem;
+  border-radius: 10px;
+}
+
+/* Footer styles */
+#footer {
+  display: flex;
+  justify-content: end;
+  margin-right: 20px;
+  gap: 20px;
+  background-color: hsl(0, 0%, 80%);
+  padding: 9px;
+  margin-top: 20px;
+}
+
+#footer div {
+  margin: 2px;
+}
+
+#footer h4 {
+  font-weight: 550;
+  margin: 0;
+}
+
+#footer p {
+  margin-top: 5px;
+  margin: 2px;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header img {
+    position: static;
+    margin-bottom: 10px;
+  }
+
+  header #nav-bar {
+    position: static;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  #form {
+    padding-bottom: 20px;
+  }
+
+  #Product_Features {
+    flex-direction: column;
+    margin-left: 0;
+  }
+
+  #Prices {
+    grid-template-columns: 1fr;
+    margin-left: 0;
+  }
+}
