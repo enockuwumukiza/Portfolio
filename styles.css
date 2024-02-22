@@ -215,9 +215,9 @@ footer{
     font-size: 1rem;
     padding: 10px 15px;
   }
-  #navbar {
-    grid-template-columns: repeat(3, auto);
-    justify-content: center;
+  #navbar{
+    grid-template-columns: repeat(3, 95px);
+    justify-content:center;
   }
   #socials {
     padding-top: 50px;
