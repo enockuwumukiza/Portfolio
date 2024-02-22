@@ -211,8 +211,8 @@ footer{
     font-size: 1rem;
   }
  #navbar{
-    grid-template-columns: repeat(3, auto);
-    justify-content: center;
+    grid-template-columns: repeat(3, 100px);;
+    justify-content: end;
     gap:3px;
   }
   .see-all-btn {
