@@ -173,13 +173,17 @@ footer{
 
 
 /* Media queries for responsive design */
-@media only screen and (max-width: 768px) {
+@media all and (max-width: 768px) {
   /* Adjustments for smaller screens */
   header {
     padding-top: 5px;
     padding-bottom: 10px;
   }
-
+   #navbar {
+    grid-template-columns: repeat(3, auto);
+    justify-content: space-around;
+     align-items:center;
+  }
   #welcome-section {
     padding-top: 100px;
     height: auto;
@@ -215,10 +219,7 @@ footer{
     font-size: 1rem;
     padding: 10px 15px;
   }
- #navbar {
-    grid-template-columns: repeat(3, auto);
-    justify-content: center;
-  }
+
   #socials {
     padding-top: 50px;
     height: auto;
