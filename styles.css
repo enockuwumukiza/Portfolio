@@ -179,11 +179,12 @@ footer{
     padding-top: 5px;
     padding-bottom: 10px;
   }
-   #navbar {
-    grid-template-columns: repeat(3, auto);
-    justify-content: space-around;
-     align-items:center;
-  }
+  #navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
   #welcome-section {
     padding-top: 100px;
     height: auto;
